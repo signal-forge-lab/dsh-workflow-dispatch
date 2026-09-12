@@ -18,3 +18,11 @@ state/
 *.key
 *.p12
 *.pfx
+
+# Private/local-only material
+secrets/
+local/
+local-config.json
+config.local.json
+config.local.*
+*.local.json

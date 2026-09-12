@@ -45,3 +45,13 @@ smoke実行や生成responseにはローカルstate領域を使用してくだ�
 - 生成state、log、ローカルprofile、一時responseはsource artifactにしない
 
 このリポジトリは開発中の公開snapshotです。モデル構成やProviderの利用可否は今後変更される場合があります。
+
+## ブランチ運用
+
+このPublic Repositoryでは、ブランチは開発工程の分離にだけ使用します。
+
+- `main` — 安定した公開可能版
+- `develop` — 開発中だが公開されてもよい統合ブランチ
+- `feature/*` — `develop` から作成する短命な公開可能featureブランチ
+
+ブランチは**セキュリティ境界として使用しません**。Secret、個人情報、PC固有パス、内部専用コードは、このPublic Repositoryのどのブランチにもコミットしません。これらは `.gitignore` 対象のローカルファイル、SOPS等の外部Secret Store、または内部専用コードが必要な場合は別のPrivate Repositoryで管理します。

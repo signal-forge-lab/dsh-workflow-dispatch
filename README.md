@@ -45,3 +45,13 @@ Use local state directories for smoke runs and generated responses. They are exc
 - Generated state, logs, local profiles, and temporary responses are not source artifacts.
 
 This repository is an in-development public snapshot; routing choices and provider availability may change over time.
+
+## Branching strategy
+
+This public repository uses branches only for development flow:
+
+- `main` — stable, public-ready code.
+- `develop` — integration branch for in-development changes that are still safe to publish.
+- `feature/*` — short-lived public-safe feature branches created from `develop`.
+
+Branches are **not** a security boundary. Secrets, personal data, machine-specific paths, and internal-only code must never be committed to any branch in this public repository. Keep those in ignored local files, an external secret store such as SOPS, or a separate private repository when internal-only source code is required.
