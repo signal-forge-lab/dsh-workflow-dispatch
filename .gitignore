@@ -3,6 +3,18 @@ archive/
 quota-smoke-*/
 responses-xhigh-tool-smoke/
 *.bak
-state/*
-!state/v4pro-3tier.patch.yml
-!state/DSH_MODEL_SELECTOR_LIVE_RECOMMENDED_TASK_20260827.md
+*.log
+
+# Local state and scratch
+state/
+.runtime/
+.tmp/
+.workbridge/
+
+# Local configuration and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
