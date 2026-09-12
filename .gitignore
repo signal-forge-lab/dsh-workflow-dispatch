@@ -1,0 +1,8 @@
+node_modules/
+archive/
+quota-smoke-*/
+responses-xhigh-tool-smoke/
+*.bak
+state/*
+!state/v4pro-3tier.patch.yml
+!state/DSH_MODEL_SELECTOR_LIVE_RECOMMENDED_TASK_20260827.md

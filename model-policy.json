@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "roles": {
+    "fast": [
+      { "provider": "orcarouter", "model": "deepseek/deepseek-v4-flash-free", "effort": "high", "privacy": "private-safe" },
+      { "provider": "aihubmix", "model": "coding-glm-5.3-flash-free", "effort": "high", "privacy": "private-safe" },
+      { "provider": "google", "model": "gemini-3.5-flash-lite", "effort": "high", "privacy": "private-safe" },
+      { "provider": "aihubmix", "model": "coding-glm-5.3-flash", "effort": "high", "privacy": "private-safe" },
+      { "provider": "aihubmix", "model": "glm-5.3-flash", "effort": "high", "privacy": "private-safe" },
+      { "provider": "aihubmix", "model": "coding-glm-5.3", "effort": "high", "privacy": "private-safe" }
+    ],
+    "balanced": [
+      { "provider": "orcarouter", "model": "deepseek/deepseek-v4-flash-free", "effort": "high", "privacy": "private-safe" },
+      { "provider": "aihubmix", "model": "coding-glm-5.3-flash-free", "effort": "high", "privacy": "private-safe" },
+      { "provider": "browser-chat", "model": "gemini-3.8-flash-ui", "effort": "high", "privacy": "public-only", "subagentProvider": "browser-chat" },
+      { "provider": "aihubmix", "model": "coding-glm-5.3-flash", "effort": "high", "privacy": "private-safe" },
+      { "provider": "aihubmix", "model": "glm-5.3-flash", "effort": "high", "privacy": "private-safe" },
+      { "provider": "aihubmix", "model": "coding-glm-5.3", "effort": "high", "privacy": "private-safe" },
+      { "provider": "google", "model": "gemini-3.8-flash", "effort": "medium", "privacy": "private-safe" },
+      { "provider": "openai-codex", "model": "gpt-5.6-luna", "effort": "max", "privacy": "private-safe" }
+    ],
+    "deep": [
+      { "provider": "opencode-zen", "model": "muse-spark-1.3-contributor-free", "effort": "xhigh", "privacy": "public-only" },
+      { "provider": "orcarouter", "model": "deepseek/deepseek-v4-flash-free", "effort": "high", "privacy": "private-safe" },
+      { "provider": "aihubmix", "model": "coding-glm-5.3-free", "effort": "high", "privacy": "private-safe" },
+      { "provider": "browser-chat", "model": "gemini-3.8-flash-ui", "effort": "high", "privacy": "public-only", "subagentProvider": "browser-chat" },
+      { "provider": "aihubmix", "model": "coding-glm-5.3-flash", "effort": "high", "privacy": "private-safe" },
+      { "provider": "aihubmix", "model": "glm-5.3-flash", "effort": "high", "privacy": "private-safe" },
+      { "provider": "aihubmix", "model": "coding-glm-5.3", "effort": "high", "privacy": "private-safe" },
+      { "provider": "google", "model": "gemini-3.8-flash", "effort": "high", "privacy": "private-safe" },
+      { "provider": "openai-codex", "model": "gpt-5.6-sol", "effort": "xhigh", "privacy": "private-safe" }
+    ]
+  },
+  "capacity": [
+    { "provider": "opencode-zen", "model": "muse-spark-1.3-contributor-free", "maxInFlight": 1 },
+    { "provider": "aihubmix", "model": "coding-glm-5.3-flash", "maxInFlight": 1 },
+    { "provider": "aihubmix", "model": "glm-5.3-flash", "maxInFlight": 1 },
+    { "provider": "aihubmix", "model": "coding-glm-5.3", "maxInFlight": 2 }
+  ]
+}

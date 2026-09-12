@@ -1,0 +1,26 @@
+{
+  "name": "iw-dsh-workflow-dispatch",
+  "version": "0.1.7",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "scripts": {
+    "test": "node --test test.mjs free-quota-guard.test.mjs model-policy.test.mjs model-capacity.test.mjs usage-admission.test.mjs artifact-bridge.test.mjs dispatch.test.mjs runtime-smoke.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-agent": "0.1.0-rc.7",
+    "@deepseek-ai/schemastery": "3.18.1"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.1"
+  }
+}
