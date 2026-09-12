@@ -1,4 +1,4 @@
 # Small model-effort and failover layer for @dsh-external/workflow.
 - insert:
-    - id: iw-dsh-workflow-dispatch
-      name: iw-dsh-workflow-dispatch
+    - id: dsh-workflow-dispatch
+      name: dsh-workflow-dispatch
